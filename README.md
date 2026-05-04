@@ -46,7 +46,7 @@ uv venv
 3. Install dependencies:
 
 ```bash
-uv pip install -r pyproject.toml
+uv sync
 ```
 
 4. Create a `.env` file and add:

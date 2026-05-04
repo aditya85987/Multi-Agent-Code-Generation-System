@@ -63,7 +63,7 @@ def coder_agent(state: dict) -> dict:
         "Use write_file(path, content) to save your changes."
     )
 
-    coder_tools = [read_file, write_file, list_files, get_current_directory]
+    coder_tools = [read_file, write_file, list_files, get_current_directory,run_cmd]
     react_agent = create_react_agent(llm, coder_tools)
 
     react_agent.invoke({"messages": [{"role": "system", "content": system_prompt},
